@@ -22,7 +22,7 @@ export const links: QuickLink[] = [
     number: 2,
     title: "LinkedIn",
     subtitle: "Connect with me",
-    href: "https://linkedin.com/in/andy-nguyen",
+    href: "https://www.linkedin.com/in/andy-nguyen-a514492a3/",
     icon: "Linkedin",
   },
   {
@@ -39,7 +39,7 @@ export const links: QuickLink[] = [
     number: 4,
     title: "Email",
     subtitle: "Get in touch",
-    href: "mailto:andy@example.com",
+    href: "mailto:andynguyen.prof0]@gmail.com",
     icon: "Mail",
   },
   {
