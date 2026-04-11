@@ -11,9 +11,17 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        "spotify-green": "#1DB954",
+        "spotify-black": "#191414",
+        "spotify-dark": "#282828",
+        "spotify-muted": "#B3B3B3",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }: { addUtilities: (u: Record<string, Record<string, string>>) => void }) {
+      addUtilities({ ".scrollbar-none": { "-ms-overflow-style": "none", "scrollbar-width": "none" } });
+    },
+  ],
 };
 export default config;
