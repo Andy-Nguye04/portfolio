@@ -27,6 +27,8 @@ export default function PlaylistCard({ project }: PlaylistCardProps) {
       <div className="relative w-[168px] h-[168px] rounded-md overflow-hidden flex-shrink-0"
         style={{ boxShadow: "0 8px 24px rgba(0,0,0,0.5)" }}
       >
+        {/* Fallback gradient */}
+        <div className="absolute inset-0 bg-gradient-to-br from-spotify-dark to-[#121212]" />
         <Image
           src={project.image}
           alt={project.name}
@@ -34,8 +36,6 @@ export default function PlaylistCard({ project }: PlaylistCardProps) {
           className="object-cover"
           onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; }}
         />
-        {/* Fallback gradient */}
-        <div className="absolute inset-0 bg-gradient-to-br from-spotify-dark to-[#121212]" />
 
         {/* Play button */}
         <motion.div

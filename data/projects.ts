@@ -35,7 +35,7 @@ export const projects: Project[] = [
     color: "#048911ff",
     year: 2026,
     githubUrl: undefined,
-    liveUrl: "https://vividai.app",
+    liveUrl: "https://andy-nguye04.github.io/no_j_website",
     featured: true,
   },
   {
@@ -53,11 +53,11 @@ export const projects: Project[] = [
       { name: "Tailwind CSS", category: "Styling" },
       { name: "Supabase", category: "Data" },
     ],
-    image: "/images/vividai.png",
+    image: "/images/crave.png",
     color: "#0d9509ff",
     year: 2026,
     githubUrl: undefined,
-    liveUrl: "https://vividai.app",
+    liveUrl: "https://www.linkedin.com/posts/andy-nguyen-a514492a3_ai-innovation-glitchucla-ugcPost-7444562695397277696-WFTq?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEk25p0BRtBVcJStTnmw_VHF1_jPxvl22bo",
     featured: true,
   },
   {
@@ -65,7 +65,7 @@ export const projects: Project[] = [
     slug: "vividai",
     name: "VividAI",
     description:
-      "An AI-powered platform for generating and editing vivid visual content. Placeholder description.",
+      "An AI-powered all-in-one Itinerary Generator. Want to go somewhere? Vivid's got you covered.",
     techStack: [
       { name: "Next.js", category: "Framework" },
       { name: "TypeScript", category: "Language" },
@@ -98,7 +98,7 @@ export const projects: Project[] = [
     color: "#e21212ff",
     year: 2025,
     githubUrl: undefined,
-    liveUrl: "https://vividai.app",
+    liveUrl: "https://www.wellsfargo.com/auto-loans/",
     featured: true,
   },
   {
@@ -119,7 +119,7 @@ export const projects: Project[] = [
     color: "#efe80aff",
     year: 2026,
     githubUrl: undefined,
-    liveUrl: "https://vividai.app",
+    liveUrl: "https://docs.google.com/presentation/d/1FbRwu-NQ4xbT5oddGemBxK8DXgDYFbpCRZmLYHd7TrU/edit?usp=sharing",
     featured: true,
   },
 ];

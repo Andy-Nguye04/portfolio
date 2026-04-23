@@ -49,7 +49,7 @@ export default function AboutPage() {
         <section className="flex flex-col gap-4">
           <h2 className="text-white font-bold text-2xl">About</h2>
           <p className="text-spotify-muted text-sm leading-relaxed max-w-2xl">
-            {/* TODO: Replace with real bio */}
+            {/* Bio */}
             Hi I&apos;m Andy a new grad from UC San Diego, I majored in Cognitive Science with a Specialization in Machine Learning
             and a Minor in Business Analytics. I&apos;m really passionate about data analytics and building good applicable products that
             positively impact users. I&apos;m also super passionate about helping those around me, music (especially festivals and I&apos;m learning

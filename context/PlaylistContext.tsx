@@ -3,9 +3,9 @@
 import { createContext, useContext, useState, ReactNode } from "react";
 
 export const playlists = [
-  { id: "37i9dQZF1DXcBWIGoYBM5M", label: "Top Hits" },
-  { id: "37i9dQZF1DX0XUsuxWHRQd", label: "RapCaviar" },
-  { id: "37i9dQZF1DX4sWSpwq3LiO", label: "Peaceful Piano" },
+  { id: "1zkURkAEx18TWngQ0XYvIh", label: "Main driving playlist" },
+  { id: "6cgBTzxLXW4TDbu0WmPJYH", label: "Cafe playlist" },
+  { id: "7oM7wtdrqZfvLW7wk1afe8", label: "All things RnB" },
 ];
 
 interface PlaylistContextType {

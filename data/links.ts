@@ -39,7 +39,7 @@ export const links: QuickLink[] = [
     number: 4,
     title: "Email",
     subtitle: "Get in touch",
-    href: "mailto:andynguyen.prof0]@gmail.com",
+    href: "mailto:andynguyen.prof0@gmail.com",
     icon: "Mail",
   },
   {
@@ -47,7 +47,7 @@ export const links: QuickLink[] = [
     number: 5,
     title: "Crave",
     subtitle: "My latest project",
-    href: "https://vividai.app", /**Switch it to the linkedin post link */
+    href: "https://www.linkedin.com/posts/andy-nguyen-a514492a3_ai-innovation-glitchucla-ugcPost-7444562695397277696-WFTq?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEk25p0BRtBVcJStTnmw_VHF1_jPxvl22bo",
     icon: "Sparkles",
   },
 ];
