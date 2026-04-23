@@ -27,7 +27,7 @@ const iconColors: Record<string, string> = {
   linkedin: "#0077B5",
   resume: "#1DB954",
   email: "#EA4335",
-  vividai: "#6C47FF",
+  crave: "#6C47FF",
 };
 
 interface TrackRowProps {
@@ -49,9 +49,8 @@ export default function TrackRow({ link, isLast }: TrackRowProps) {
       {...linkProps}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className={`flex items-center gap-4 px-4 py-3 transition-colors duration-150 ${
-        !isLast ? "border-b border-[#2A2A2A]" : ""
-      }`}
+      className={`flex items-center gap-4 px-4 py-3 transition-colors duration-150 ${!isLast ? "border-b border-[#2A2A2A]" : ""
+        }`}
       style={{ backgroundColor: hovered ? "#2A2A2A" : "transparent" }}
     >
       {/* Track number / play icon */}

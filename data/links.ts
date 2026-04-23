@@ -43,11 +43,11 @@ export const links: QuickLink[] = [
     icon: "Mail",
   },
   {
-    id: "vividai",
+    id: "crave",
     number: 5,
-    title: "VividAI",
+    title: "Crave",
     subtitle: "My latest project",
-    href: "https://vividai.app",
+    href: "https://vividai.app", /**Switch it to the linkedin post link */
     icon: "Sparkles",
   },
 ];

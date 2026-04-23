@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { projects } from "@/data/projects";
 import { experience } from "@/data/experience";
 
@@ -32,11 +33,19 @@ export default function ProfileHero() {
         <motion.div variants={fadeSlideUp}>
           <Link href="/about" className="block w-fit">
             <div
-              className="w-[200px] h-[200px] rounded-full bg-[#5C3A2A]/60 border border-white/10 hover:opacity-90 transition-opacity"
+              className="w-[200px] h-[200px] rounded-full overflow-hidden border border-white/10 hover:opacity-90 transition-opacity relative"
               style={{
                 boxShadow: "0 8px 40px rgba(0,0,0,0.7), 0 2px 8px rgba(0,0,0,0.4)",
               }}
-            />
+            >
+              <Image
+                src="/images/andy-hero.JPG"
+                alt="Andy Nguyen"
+                fill
+                className="object-cover object-[center_70%]"
+                priority
+              />
+            </div>
           </Link>
         </motion.div>
 
@@ -66,7 +75,7 @@ export default function ProfileHero() {
           <span className="text-spotify-muted">•</span>
           <span className="text-white font-medium">{experience.length} Experiences</span>
           <span className="text-spotify-muted">•</span>
-          <span className="text-white font-medium">UCSD &apos;2X</span>
+          <span className="text-white font-medium">UCSD &apos;2026</span>
         </motion.div>
       </div>
     </motion.section>

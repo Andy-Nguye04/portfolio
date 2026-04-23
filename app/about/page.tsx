@@ -1,69 +1,48 @@
 import Link from "next/link";
-import Image from "next/image";
 import { ChevronLeft } from "lucide-react";
+import HeroBanner from "@/components/profile/HeroBanner";
 
 const skills = [
-  "TypeScript",
+  "Data Analytics",
+  "Product Management",
+  "Forecasting",
+  "Leadership",
+  "Ownership",
+  "Curiosity",
+  "Innovation",
+  "3PT Shooting",
   "React",
   "Next.js",
   "Node.js",
   "Python",
   "Java",
-  "Spring Boot",
   "SQL",
   "PostgreSQL",
   "Git",
   "Tailwind CSS",
   "REST APIs",
-  "AWS",
-  "Docker",
   "Figma",
+  "TypeScript",
 ];
 
 const funFacts = [
-  "TODO: Fun fact #1",
-  "TODO: Fun fact #2",
-  "TODO: Fun fact #3",
-  "TODO: Fun fact #4",
+  "I used to play Esports for League of Legends and CS:GO, I still play video games a lot, notably TeamFightTactics.",
+  "I've been to a bunch of concerts and music festivals. I like to take concert photos and have seen almost all of my favorite artists.",
+  "I'm learning how to bake and make matcha drinks, and one day want to open my own cafe.",
+  "I would do my computer science homework while playing TeamFightTactics...",
 ];
 
 export default function AboutPage() {
   return (
     <main className="flex flex-col min-h-screen">
       {/* Hero banner */}
-      <div className="relative w-full h-64 overflow-hidden">
-        {/* Photo — replace src with real image when ready */}
-        <Image
-          src="/images/andy-hero.jpg"
-          alt="Andy Nguyen"
-          fill
-          className="object-cover object-top"
-          onError={undefined}
-          priority
-        />
-        {/* Placeholder gradient when no image */}
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(135deg, #5C3A2A 0%, #3a2218 50%, #191414 100%)",
-          }}
-        />
-        {/* Gradient overlay — fades photo to black at bottom */}
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(to bottom, transparent 30%, rgba(25,20,20,0.7) 70%, #191414 100%)",
-          }}
-        />
-      </div>
+      <HeroBanner />
 
       {/* Content */}
       <div className="px-10 pb-16 flex flex-col gap-10 -mt-4">
         {/* Stat line */}
         <p className="text-spotify-muted text-sm font-medium tracking-wide">
-          UCSD Class of 20XX&nbsp;&nbsp;•&nbsp;&nbsp;San Diego, CA
+          UCSD Class of 2026, San Diego, CA
         </p>
 
         {/* About section */}
@@ -71,9 +50,10 @@ export default function AboutPage() {
           <h2 className="text-white font-bold text-2xl">About</h2>
           <p className="text-spotify-muted text-sm leading-relaxed max-w-2xl">
             {/* TODO: Replace with real bio */}
-            TODO: Add a 2–3 sentence bio here. Describe your background, what
-            you&apos;re passionate about, and what you&apos;re currently working
-            on or studying.
+            Hi I&apos;m Andy a new grad from UC San Diego, I majored in Cognitive Science with a Specialization in Machine Learning
+            and a Minor in Business Analytics. I&apos;m really passionate about data analytics and building good applicable products that
+            positively impact users. I&apos;m also super passionate about helping those around me, music (especially festivals and I&apos;m learning
+            how to DJ!), and basketball which I play avidly.
           </p>
         </section>
 
