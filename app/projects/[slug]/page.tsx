@@ -44,7 +44,7 @@ export default async function ProjectPage({ params }: Props) {
               alt={project.name}
               fill
               className="object-cover"
-              onError={undefined}
+
             />
             {/* Fallback */}
             <div
