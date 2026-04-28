@@ -16,9 +16,9 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Andy Nguyen — Software Engineer Portfolio",
+  title: "Andy Nguyen — Product Manager Portfolio",
   description:
-    "Andy Nguyen is a software engineer and UCSD student. Explore his projects, experience, and skills.",
+    "Andy Nguyen is a product manager and UCSD student. Explore his projects, experience, and skills.",
 };
 
 export default function RootLayout({
