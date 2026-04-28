@@ -4,6 +4,7 @@ import { createContext, useContext, useState, ReactNode } from "react";
 
 export const playlists = [
   { id: "1zkURkAEx18TWngQ0XYvIh", label: "Main driving playlist" },
+  { id: "3mlwKpo7qhAfw21UhCRjbN", label: "Fishing playlist" },
   { id: "6cgBTzxLXW4TDbu0WmPJYH", label: "Cafe playlist" },
   { id: "7oM7wtdrqZfvLW7wk1afe8", label: "All things RnB" },
 ];

@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { ChevronLeft, ChevronRight, Search } from "lucide-react";
+import Image from "next/image";
 
 export default function TopBar() {
   const router = useRouter();
@@ -16,11 +17,10 @@ export default function TopBar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 md:left-[72px] right-0 md:right-[320px] h-16 z-10 flex items-center px-6 gap-4 transition-all duration-300 ${
-        scrolled
+      className={`fixed top-0 left-0 md:left-[72px] right-0 md:right-[320px] h-16 z-10 flex items-center px-6 gap-4 transition-all duration-300 ${scrolled
           ? "bg-[#121212] shadow-lg shadow-black/50"
           : "bg-black/30 backdrop-blur-md"
-      }`}
+        }`}
     >
       {/* Back / Forward */}
       <div className="flex items-center gap-1">
@@ -54,7 +54,13 @@ export default function TopBar() {
         className="w-9 h-9 rounded-full bg-spotify-muted/40 hover:bg-spotify-muted/60 transition-colors overflow-hidden flex-shrink-0 ml-auto"
         title="Profile"
       >
-        <div className="w-full h-full bg-spotify-dark" />
+        <Image
+          src="/images/andy-hero.JPG"
+          alt="Andy Nguyen"
+          width={36}
+          height={36}
+          className="object-cover object-[center_40%]"
+        />
       </button>
     </header>
   );

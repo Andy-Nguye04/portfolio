@@ -1,20 +1,24 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { House, Search, Library, Plus } from "lucide-react";
+import SnakeModal from "@/components/modals/SnakeModal";
 
 const navItems = [
   { href: "/", icon: House, label: "Home" },
-  { href: "/search", icon: Search, label: "Search" },
   { href: "/projects", icon: Library, label: "Library" },
 ];
 
 export default function Sidebar() {
   const pathname = usePathname();
+  const [snakeOpen, setSnakeOpen] = useState(false);
 
   return (
+    <>
+    <SnakeModal open={snakeOpen} onClose={() => setSnakeOpen(false)} />
     <aside className="hidden md:flex fixed top-0 left-0 h-screen w-[72px] bg-black flex-col items-center py-6 z-20">
       {/* Logo */}
       <motion.div
@@ -53,6 +57,19 @@ export default function Sidebar() {
             </motion.div>
           );
         })}
+        <motion.div
+          initial={{ opacity: 0, x: -12 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.3, duration: 0.3 }}
+        >
+          <button
+            title="Search"
+            onClick={() => setSnakeOpen(true)}
+            className="flex items-center justify-center w-10 h-10 rounded-lg transition-colors text-spotify-muted hover:text-white"
+          >
+            <Search size={22} />
+          </button>
+        </motion.div>
       </nav>
 
       {/* Add playlist */}
@@ -66,5 +83,6 @@ export default function Sidebar() {
         <Plus size={22} />
       </motion.button>
     </aside>
+    </>
   );
 }

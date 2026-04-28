@@ -26,6 +26,7 @@ const skills = [
 ];
 
 const funFacts = [
+  "I like donuts a lot.",
   "I used to play Esports for League of Legends and CS:GO, I still play video games a lot, notably TeamFightTactics.",
   "I've been to a bunch of concerts and music festivals. I like to take concert photos and have seen almost all of my favorite artists.",
   "I'm learning how to bake and make matcha drinks, and one day want to open my own cafe.",
